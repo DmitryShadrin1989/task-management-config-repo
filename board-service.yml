@@ -4,6 +4,8 @@ server:
 eureka:
   client:
     fetch-registry: true
+    serviceUrl:
+      defaultZone: http://discovery-server:8761/eureka/
 
 spring:
   data:
