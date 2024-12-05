@@ -1,10 +1,6 @@
 server:
   port: 0
 
-eureka:
-  client:
-    fetch-registry: true
-
 spring:
   data:
     mongodb:
@@ -12,3 +8,9 @@ spring:
       port: 27017
       database: taskTrackingDb
       auto-index-creation: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

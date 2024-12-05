@@ -1,10 +1,6 @@
 server:
   port: 0
 
-eureka:
-  client:
-    fetch-registry: true
-
 spring:
   data:
     mongodb:
@@ -31,6 +27,12 @@ spring:
     command:
       version:
         enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 app:
   user-init-file: userInit.csv

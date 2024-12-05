@@ -1,6 +1,8 @@
 server:
   port: 8085
 
-eureka:
-  client:
-    fetch-registry: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

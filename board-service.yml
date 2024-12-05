@@ -8,3 +8,9 @@ spring:
       port: 27017
       database: taskTrackingDb
       auto-index-creation: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
